@@ -9,10 +9,10 @@ class Example extends Phaser.Scene
     {
         this.load.path = 'assets/animations/';
 
-        this.load.image('cat1', 'zombi.png');
-        this.load.image('cat2', 'zombi_Atack.png');
-        this.load.image('cat3', 'zombi.png');
-        this.load.image('cat4', 'zombi_Atack.png');
+        this.load.image('zumbi1', 'zombi.png');
+        this.load.image('zumbi2', 'zombi_Atack.png');
+        this.load.image('zumbi3', 'zombi.png');
+        this.load.image('zumbi4', 'zombi_Atack.png');
     }
 
     create ()
@@ -20,16 +20,16 @@ class Example extends Phaser.Scene
         this.anims.create({
             key: 'snooze',
             frames: [
-                { key: 'cat1' },
-                { key: 'cat2' },
-                { key: 'cat3' },
-                { key: 'cat4', duration: 20 }
+                { key: 'zumbi1' },
+                { key: 'zumbi2' },
+                { key: 'zumbi3' },
+                { key: 'zumbi4', duration: 20 }
             ],
             frameRate: 8,
             repeat: -1
         });
 
-        this.add.sprite(400, 300, 'cat1')
+        this.add.sprite(400, 300, 'zumbi1')
             .play('snooze');
     }
 }
