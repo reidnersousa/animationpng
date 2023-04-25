@@ -7,6 +7,8 @@ class Example extends Phaser.Scene
 
     preload ()
     {
+
+      
         this.load.path = 'assets/animations/';
 
         this.load.image('zumbi1', 'zombi.png');
@@ -38,7 +40,7 @@ const config = {
     type: Phaser.AUTO,
     parent: 'phaser-example',
     width: 800,
-    height: 600,
+    height: 700,
     backgroundColor: '#fbf0e4',
     scene: Example
 };
